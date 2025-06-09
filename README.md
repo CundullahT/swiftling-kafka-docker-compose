@@ -28,7 +28,7 @@ Ensure the following dependencies are installed on your system:
 
 3. Wait until you see the below INFO log message:
    ```
-   Keycloak 26.1.4 on JVM (powered by Quarkus 3.15.3.1) started in 5.583s. Listening on: http://0.0.0.0:8080
+   Kafka Server started (kafka.server.KafkaRaftServer)
    ```
    
    Access Kafka in your browser:
@@ -47,7 +47,7 @@ docker-compose down
 ## Additional Information
 
 - Ensure that each microservice is configured to use the correct **Realm Name** and **Client ID**.
-- Each microservice that integrates with Kafka should set the `spring.kafka.bootstrap-servers` config in their configurations file (application.yml or application.properties).
+- Each microservice that integrates with Kafka should set the `spring.kafka.bootstrap-servers` config in its configuration file (application.yml or application.properties).
 
 ## License
 
